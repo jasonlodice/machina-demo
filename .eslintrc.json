@@ -1,0 +1,18 @@
+{
+  "extends": "airbnb",
+  "plugins": [],
+  "rules": {
+    // disallow reassignment of function parameters
+    // disallow parameter object manipulation
+    // rule: http://eslint.org/docs/rules/no-param-reassign.html
+    "no-param-reassign": [
+      "error",
+      {
+        "props": false
+      }
+    ],
+    //  Node4 currently requires "use strict" for es6 syntax
+    "strict": "off",
+    "linebreak-style": ["warn", "windows"]
+  }
+}
